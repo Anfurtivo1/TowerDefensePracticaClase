@@ -31,7 +31,6 @@ public class Gamemanager : MonoBehaviour
                     Transform cuadricula = hit.collider.transform;
                     if (cuadricula.childCount==0)
                     {
-                        Debug.Log("Se ha pulsado el boton izquierdo");
                         GameObject pokemon=Instantiate(objeto, hit.collider.transform.position, objeto.transform.rotation);
                         dinero = dinero - dineroAGastar;
                         pokemon.transform.SetParent(cuadricula);
