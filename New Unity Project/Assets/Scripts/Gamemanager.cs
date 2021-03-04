@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Gamemanager : MonoBehaviour
 {
+    public List <GameObject> objetos;
     public GameObject objeto;
     public int dinero;
+    private int dineroAGastar;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +20,12 @@ public class Gamemanager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            
             Ray rayo = Camera.main.ScreenPointToRay(Input.mousePosition);
             // Cast a ray straight down.
             RaycastHit2D hit = Physics2D.Raycast(rayo.origin,rayo.direction);
 
             // If it hits something...
-                if (hit.collider != null && hit.collider.tag.Equals("Cuadricula"))
+                if (hit.collider != null && hit.collider.tag.Equals("Cuadricula") && dinero>=dineroAGastar && objeto !=null)
                 {
                 //Para que se ponga en el centro de la cuadricula
                     Transform cuadricula = hit.collider.transform;
@@ -32,11 +33,24 @@ public class Gamemanager : MonoBehaviour
                     {
                         Debug.Log("Se ha pulsado el boton izquierdo");
                         GameObject pokemon=Instantiate(objeto, hit.collider.transform.position, objeto.transform.rotation);
-                        dinero = dinero - 100;
+                        dinero = dinero - dineroAGastar;
                         pokemon.transform.SetParent(cuadricula);
                     }
                 
                 }
+
+            if (hit.collider!=null && hit.collider.tag.Equals("FlareonCard"))
+            {
+                dineroAGastar = 100;
+                objeto = objetos[0];
             }
+
+            if (hit.collider != null && hit.collider.tag.Equals("BlastoiseCard"))
+            {
+                dineroAGastar = 50;
+                objeto = objetos[1];
+            }
+
+        }
     }
 }

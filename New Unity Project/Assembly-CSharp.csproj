@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Gamemanager.cs" />
+    <Compile Include="Assets\Scripts\GeneradorDinero.cs" />
     <Compile Include="Assets\Scripts\Proyectil.cs" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/TrabajoClaseTowerDefense/TowerDefensePracticaClase/New Unity Project/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
