@@ -18,8 +18,6 @@ public class Proyectil : MonoBehaviour
         transform.position += Vector3.right * velocidad * Time.deltaTime;
     }
 
-
-
     //void OnTriggerEnter(Collider other)
     //{
     //    if (other.tag == "Enemigo")

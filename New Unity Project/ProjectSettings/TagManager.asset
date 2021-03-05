@@ -8,6 +8,7 @@ TagManager:
   - Enemigo
   - FlareonCard
   - BlastoiseCard
+  - Proyectil
   layers:
   - Default
   - TransparentFX

@@ -6,15 +6,16 @@ public class Disparo : MonoBehaviour
 {
     public GameObject proyectil;
     public Transform boca;
+    private GameObject p;
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
         while (true)
         {
-            yield return new WaitForSeconds(3);
-            GameObject p = Instantiate(proyectil, boca.position, boca.rotation);
-            Destroy(p, 2);
+            yield return new WaitForSeconds(1f);
+            p = Instantiate(proyectil, boca.position, boca.rotation);
+            //Destroy(p, 2);
         }
         
     }
@@ -24,4 +25,12 @@ public class Disparo : MonoBehaviour
     {
         
     }
+
+    //void OnCollisionEnter2D(Collider2D _col)
+    //{
+    //    if (_col.gameObject.tag == "Enemigo")
+    //    {
+    //        Destroy(p);
+    //    }
+    //}
 }

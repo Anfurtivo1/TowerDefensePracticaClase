@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 6600517507372270164}
   - component: {fileID: 306964595508857152}
   - component: {fileID: 5701277754071761724}
+  - component: {fileID: -2136077425612244387}
+  - component: {fileID: 8150198390854060414}
+  - component: {fileID: 4095068247606888708}
   m_Layer: 0
   m_Name: Flareon2 Variant
   m_TagString: Untagged
@@ -98,6 +101,66 @@ MonoBehaviour:
   proyectil: {fileID: 2589480064881436071, guid: ff4ab56393d2b8a4289c26b07cf10b45,
     type: 3}
   boca: {fileID: 2344049023910299720}
+--- !u!114 &-2136077425612244387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2801898583263591761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f681d4046bb38545a20b3489dfa422b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 30
+--- !u!50 &8150198390854060414
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2801898583263591761}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
+--- !u!61 &4095068247606888708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2801898583263591761}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.92}
+    newSize: {x: 1, y: 0.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.92}
+  m_EdgeRadius: 0
 --- !u!1 &3562099189334406771
 GameObject:
   m_ObjectHideFlags: 0
