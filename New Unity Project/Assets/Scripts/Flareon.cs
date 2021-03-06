@@ -18,19 +18,13 @@ public class Flareon : MonoBehaviour
 
     }
 
-    IEnumerator OnTriggerStay2D(Collider2D col)
+    void recibirAtaque()
     {
-        yield return new WaitForSeconds(1f);
-
-        if (col.tag == "Enemigo")
-            Debug.Log("POKEMON: "+vida);
-            vida = vida - 10;
-
-        if (vida <= 0)
+        vida = vida - 1;
+        if (vida<=0)
         {
-            Enemigo enemigo = FindObjectOfType<Enemigo>();
-            enemigo.andar = true;
             Destroy(gameObject);
         }
-    } 
+    }
+
     }

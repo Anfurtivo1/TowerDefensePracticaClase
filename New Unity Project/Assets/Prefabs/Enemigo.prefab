@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2403264871683905296}
   - component: {fileID: 73118015364397243}
   - component: {fileID: 7329355309145394723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemigo
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -98,7 +98,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 6
   vida: 50
-  andar: 1
+  pokemon:
+    serializedVersion: 2
+    m_Bits: 512
+  velocidadAtaque: 1
 --- !u!61 &73118015364397243
 BoxCollider2D:
   m_ObjectHideFlags: 0

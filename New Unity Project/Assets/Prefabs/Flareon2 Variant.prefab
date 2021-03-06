@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2136077425612244387}
   - component: {fileID: 8150198390854060414}
   - component: {fileID: 4095068247606888708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flareon2 Variant
   m_TagString: Pokemon
   m_Icon: {fileID: 0}
@@ -101,6 +101,9 @@ MonoBehaviour:
   proyectil: {fileID: 2589480064881436071, guid: ff4ab56393d2b8a4289c26b07cf10b45,
     type: 3}
   boca: {fileID: 2344049023910299720}
+  enemigo:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &-2136077425612244387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2344049023910299720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boca
   m_TagString: Untagged
   m_Icon: {fileID: 0}

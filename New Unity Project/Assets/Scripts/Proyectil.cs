@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour
 {
-    public int velocidad = 3;
-    public int ataque = 10;
+    public int velocidad;
+    public int ataque;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +18,9 @@ public class Proyectil : MonoBehaviour
         transform.position += Vector3.right * velocidad * Time.deltaTime;
     }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.tag == "Enemigo")
-    //    {
-    //        //Si el ataque colisiona contra un objeto con el tag 'Enemigo', se decrementan las vidas de dicho enemigo
-    //        other.gameObject.GetComponent<ComportamientoEnemigo>().Vidas--;
+    public int obtenerAtaqueProyectil()
+    {
+        return ataque;
+    }
 
-    //        //Destruimos el objeto cuando colisione contra un enemigo
-    //        Destroy(gameObject);
-    //    }
-    //}
 }
