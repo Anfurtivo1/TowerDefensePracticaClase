@@ -25,12 +25,4 @@ public class Disparo : MonoBehaviour
     {
         
     }
-
-    //void OnCollisionEnter2D(Collider2D _col)
-    //{
-    //    if (_col.gameObject.tag == "Enemigo")
-    //    {
-    //        Destroy(p);
-    //    }
-    //}
 }

@@ -9,6 +9,7 @@ TagManager:
   - FlareonCard
   - BlastoiseCard
   - Proyectil
+  - Pokemon
   layers:
   - Default
   - TransparentFX

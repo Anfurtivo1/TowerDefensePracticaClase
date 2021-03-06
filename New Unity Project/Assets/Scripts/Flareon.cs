@@ -9,28 +9,28 @@ public class Flareon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void OnTriggerStay2D(Collider2D col)
+    IEnumerator OnTriggerStay2D(Collider2D col)
     {
-        
-        if (col.tag == "Enemigo")
-        {
-            vida = vida - 10;
-            Debug.Log("Pokemon: "+vida);
+        yield return new WaitForSeconds(1f);
 
-            if (vida <= 0)
-            {
-                Destroy(gameObject);
-            }
+        if (col.tag == "Enemigo")
+            Debug.Log("POKEMON: "+vida);
+            vida = vida - 10;
+
+        if (vida <= 0)
+        {
+            Enemigo enemigo = FindObjectOfType<Enemigo>();
+            enemigo.andar = true;
+            Destroy(gameObject);
         }
-        System.Threading.Thread.Sleep(2000);
+    } 
     }
-}

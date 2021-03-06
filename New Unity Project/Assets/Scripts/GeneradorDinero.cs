@@ -18,7 +18,7 @@ public class GeneradorDinero : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             gamemanager.dinero = dineroGenera + gamemanager.dinero;
-            Debug.Log("Dinero actual: "+ gamemanager.dinero);
+            //Debug.Log("Dinero actual: "+ gamemanager.dinero);
         }
             
     }

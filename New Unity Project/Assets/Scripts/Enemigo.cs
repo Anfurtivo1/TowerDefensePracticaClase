@@ -6,6 +6,7 @@ public class Enemigo : MonoBehaviour
 {
     public float velocidad;
     public int vida;
+    public bool andar = true;
 
     // Start is called before the first frame update
     void Start()
@@ -16,22 +17,34 @@ public class Enemigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left * velocidad * Time.deltaTime;
+        if (andar)
+        {
+            transform.position += Vector3.left * velocidad * Time.deltaTime;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Proyectil")
-        {
-            Debug.Log(vida);
-            vida = vida - 10;
-            Destroy(col.gameObject);
-            Debug.Log(vida);
-
-            if (vida <= 0)
+            if (col.tag == "Pokemon")
             {
-                Destroy(gameObject);
+                //yield return new WaitForSeconds(1f);
+                andar = false;
+
             }
-        }
+            if (col.tag == "Proyectil")
+            {
+                Debug.Log(vida);
+                vida = vida - 10;
+                Destroy(col.gameObject);
+                Debug.Log(vida);
+
+                if (vida <= 0)
+                {
+
+                    Destroy(gameObject);
+                }
+            }
     }
+
+
 }
