@@ -42,10 +42,8 @@ public class Enemigo : MonoBehaviour
 
         if (col.tag == "Proyectil")
         {
-            //Debug.Log(vida);
             vida = vida - 1;
             Destroy(col.gameObject);
-            //Debug.Log(vida);
 
             if (vida <= 0)
             {

@@ -2068,7 +2068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetos:
   - {fileID: 2801898583263591761, guid: 1ead2378bf56bf24091b3eafcb32bfea, type: 3}
-  - {fileID: 3394409134278878155, guid: 168d79f48eece23448196d94c2fa1338, type: 3}
+  - {fileID: 2692242731464756297, guid: e8b17dc147c82c94c8cd714dfe23dcb0, type: 3}
   - {fileID: 0}
   objeto: {fileID: 0}
   dinero: 2147483647
