@@ -36,7 +36,11 @@ public class Gamemanager : MonoBehaviour
                         pokemon.transform.SetParent(cuadricula);
                     }
                 
-                }
+                } else if (hit.collider.CompareTag("Pokeball"))
+                    {
+                        ActualizarDinero(50);
+                        Destroy(hit.collider.gameObject);
+                    }
 
             if (hit.collider!=null && hit.collider.tag.Equals("FlareonCard"))
             {
@@ -46,10 +50,34 @@ public class Gamemanager : MonoBehaviour
 
             if (hit.collider != null && hit.collider.tag.Equals("BlastoiseCard"))
             {
-                dineroAGastar = 50;
+                dineroAGastar = 150;
                 objeto = objetos[1];
             }
 
+            if (hit.collider != null && hit.collider.tag.Equals("AmoongussCard"))
+            {
+                dineroAGastar = 50;
+                objeto = objetos[2];
+            }
+
+            if (hit.collider != null && hit.collider.tag.Equals("AggronCard"))
+            {
+                dineroAGastar = 100;
+                objeto = objetos[3];
+            }
+
+            if (hit.collider != null && hit.collider.tag.Equals("ShuckleCard"))
+            {
+                dineroAGastar = 50;
+                objeto = objetos[4];
+            }
+
         }
+    }
+
+    public void ActualizarDinero(int Add)
+    {
+        dinero += Add;
+
     }
 }
