@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -8,10 +9,13 @@ public class Gamemanager : MonoBehaviour
     public GameObject objeto;
     public int dinero;
     private int dineroAGastar;
+    public Text TxtDinero;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        ActualizarDinero(0);
     }
 
     // Update is called once per frame
@@ -71,13 +75,14 @@ public class Gamemanager : MonoBehaviour
                 dineroAGastar = 50;
                 objeto = objetos[4];
             }
-
+            ActualizarDinero(0);
         }
     }
 
     public void ActualizarDinero(int Add)
     {
         dinero += Add;
+        TxtDinero.text = dinero.ToString();
 
     }
 }

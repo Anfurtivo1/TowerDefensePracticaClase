@@ -18,7 +18,7 @@ public class GeneradorEnemigos : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             go = Instantiate(Enemigo[listaenemigos[i]], portal[listaportales[i]].position, portal[listaportales[i]].rotation) as GameObject;
-            if (i<20)
+            if (i<19)
             {
                 i++;
             }
