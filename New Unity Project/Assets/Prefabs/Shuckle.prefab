@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8749005707601656784}
   - component: {fileID: 910166854095876986}
   - component: {fileID: 5514528803502459068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shuckle
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 315839194724695235}
   - component: {fileID: 444469730281566672}
   - component: {fileID: -303973386971666016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aggron
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

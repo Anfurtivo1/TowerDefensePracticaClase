@@ -153,6 +153,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3394409134278878155, guid: 168d79f48eece23448196d94c2fa1338,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pokemon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168d79f48eece23448196d94c2fa1338, type: 3}
 --- !u!4 &1484051511088090509 stripped
