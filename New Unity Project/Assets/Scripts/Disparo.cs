@@ -20,7 +20,7 @@ public class Disparo : MonoBehaviour
             if (hit.collider !=null)
             {
                 p = Instantiate(proyectil, boca.position, boca.rotation);
-                Destroy(p, 2);
+                Destroy(p, 5);
             }
            
         }

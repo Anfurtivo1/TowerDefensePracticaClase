@@ -3174,7 +3174,7 @@ MonoBehaviour:
   - {fileID: 6508940056603972860, guid: 303c977bbe1bfc344ae1f6f760ad3214, type: 3}
   - {fileID: 8482612375196487888, guid: 64053e7efb08a894eaa4161d5d665f88, type: 3}
   objeto: {fileID: 0}
-  dinero: 555
+  dinero: 200
   TxtDinero: {fileID: 1034111401}
 --- !u!1 &1736839560
 GameObject:
@@ -3497,7 +3497,7 @@ MonoBehaviour:
   Enemigo:
   - {fileID: 3499540053592347812, guid: f3ef0b8d44491da4c971e3eda18cd8d3, type: 3}
   - {fileID: 1393433891532882381, guid: 42d0d0c4178975a459bb9da7c29070a3, type: 3}
-  - {fileID: 394165526963714125, guid: ca9b0520e8005f74d8491582a86907de, type: 3}
+  - {fileID: 1393433891532882381, guid: 42d0d0c4178975a459bb9da7c29070a3, type: 3}
   - {fileID: 5816601719877840432, guid: 9f3c43d20bfd89c48bd0af142197512b, type: 3}
   portal:
   - {fileID: 82420966}
