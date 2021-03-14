@@ -51,6 +51,12 @@ public class Enemigo : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+
+        if (col.tag == "FailState")
+        {
+            Destroy(gameObject);
+        }
             
     }
 

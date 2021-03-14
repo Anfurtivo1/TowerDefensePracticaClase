@@ -4,5 +4,32 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: a7be41c0694f91144a79004225deb8c3
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: aa5d6985d72cba8418e3255d31eeddb2
+  - enabled: 1
+    path: Assets/Scenes/EscenaElegirNiveles.unity
+    guid: 2fc9cdbcc501c5141baa90fa39110043
+  - enabled: 1
+    path: Assets/Scenes/Nivel_3.unity
+    guid: 3cfdc637e67e0f146a3acc7ae5fdba13
+  - enabled: 1
+    path: Assets/Scenes/Nivel_2.unity
+    guid: 2d1666792306247418add1176792f94d
+  - enabled: 1
+    path: Assets/Scenes/Nivel_1.unity
+    guid: 2d17184bd474f6545b9b6b34cb6e5d06
+  - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: 58827978115c38849a3cacc24ce74952
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 25c97c97b92bef74396357d80384872a
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: bf6cc6fbceb47194297ae9061a41011c
   m_configObjects: {}
